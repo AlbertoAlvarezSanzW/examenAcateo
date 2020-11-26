@@ -6,13 +6,142 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="328dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/clooney2_foreground" />
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:text="George Clooney once gave 14 friends $1 million each -- in cash"/>
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="He shared the anecdote in an interview with GQ, which crowned Clooney its Icon of the Year, among other ho.."
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@mipmap/cnn_foreground" />
+
+                    <TextView
+                        android:layout_width="328dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="CNN.com  19 hour ago"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="328dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/clooney2_foreground" />
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:text="George Clooney once gave 14 friends $1 million each -- in cash"/>
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="He shared the anecdote in an interview with GQ, which crowned Clooney its Icon of the Year, among other ho.."
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@mipmap/cnn_foreground" />
+
+                    <TextView
+                        android:layout_width="328dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="CNN.com  19 hour ago"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
